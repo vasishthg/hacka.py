@@ -1,0 +1,85 @@
+body {
+    font-family: 'SVN-Gilroy', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.main-wrapper {
+    height: 100vh;
+    background: url("./static/line.png");
+    background-repeat: no-repeat;
+    width: 100vw;
+    margin: -1em -1em -1em -1em;
+    padding: 1em 1em 1em 1em;
+    display: flex;
+    align-items: center;
+}
+
+.login-info {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 45em;
+}
+
+.login-img {
+    height: 65px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.login-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5em;
+    padding: 0;
+    align-items: flex-start;
+}
+
+.login-title {
+    font-size: 6em;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.login-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.25em;
+    cursor: pointer;
+    margin-top: 0.5em;
+}
+
+.login-form {
+    margin-left: 8em;
+}
+
+.form-category {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2em;
+}
+
+.form-category > label {
+    font-size: 1.5em;
+    margin-bottom: 0.25em;
+}
+
+.form-category > input {
+    padding: 1em;
+    border-radius: 0.5em;
+    font-size: 1.5em;
+    width: 170%;
+    border: 0.02em solid black;
+}
+
+.login-form > button {
+    background-color: #8FE3CF;
+    margin-top: 2.5em;
+    padding: 0.5em 2em;
+    border-radius: 0.5em;
+    font-size: 1.25em;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+body {
+    font-family: 'SVN-Gilroy', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: url("./static/admin.svg");
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+}

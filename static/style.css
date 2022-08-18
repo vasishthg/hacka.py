@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+@font-face {
+    font-family: 'gilroy-black';
+    src: url('Gilroy/Gilroy-Black.ttf');
+}
+
+@font-face {
+    font-family: 'gilroy-bold';
+    src: url('Gilroy/Gilroy-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'gilroy-extrabold';
+    src: url('Gilroy/Gilroy-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'gilroy-heavy';
+    src: url('Gilroy/Gilroy-Heavy.ttf');
+}
+
+@font-face {
+    font-family: 'gilroy-light';
+    src: url('Gilroy/Gilroy-Light.ttf');
+}
+
+@font-face {
+    font-family: 'gilroy-regular';
+    src: url('Gilroy/Gilroy-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'gilroy-semibold';
+    src: url('Gilroy/Gilroy-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'gilroy-thin';
+    src: url('Gilroy/Gilroy-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'gilroy-ultralight';
+    src: url('Gilroy/Gilroy-UltraLight.ttf');
+}
+
+body{
+    font-family: 'gilroy-regular';
+    background-color: white;
+    overflow-x: hidden;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+.home-bg{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    pointer-events: none;
+    user-select: none;
+    top: -4em;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav{
+    color: white;
+    padding: 2em 3em 1em 3em;
+    vertical-align: middle;
+    z-index: 2;
+    width: 100%;
+    position: fixed;
+}
+
+.nav-logo{
+    font-family: 'Major Mono Display';
+    vertical-align: middle;
+    font-size: 1.5em;
+}
+
+.nav-links{
+    float: right;
+    display: inline;
+    margin-right: 3em;
+    vertical-align: middle;
+}
+
+.nav-link{
+    vertical-align: middle;
+    font-weight: 400;
+    margin-right: 5em;
+}

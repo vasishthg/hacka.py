@@ -69,3 +69,12 @@ body {
 .main-img {
     width: 100%;
 }
+
+@media screen and (max-width: 1500px) {
+    .main-container {
+        margin-left: 200px;
+    }
+    .main-img {
+        width: 150%;
+    }
+}

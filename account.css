@@ -1,0 +1,145 @@
+body {
+    font-family: 'SVN-Gilroy', sans-serif;
+    overflow-x: hidden;
+    background: url("./static/admin.svg");
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95vh;
+    padding-right: 2em;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header-right > a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+.main-content {
+    margin-top: 2em;
+    background-color: white;
+    border-radius: 20px;
+    height: 70vh;
+    flex: 1;
+    padding: 2em;
+}
+
+.form-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5em;
+    width: 100%;
+    height: 100%;
+}
+
+.section-title {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    letter-spacing: 3px;
+}
+
+.form-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2em;
+    width: 100%;
+}
+
+.form-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150%;
+    margin-bottom: 1em;
+}
+
+.section-name {
+    font-size: 1.25em;
+}
+
+.section-input {
+    padding: 0.75em 1em;
+    border-radius: 0.5em;
+    margin-left: 2em;
+    font-size: 1em;
+    border: 0.5px solid gray;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    font-weight: 700;
+    width: 150%;
+    flex: 1;
+}
+
+.form-image {
+    margin-left: 50em;
+}
+
+.form-bottom {
+    margin-top: 5em;
+    height: 200%;
+}
+
+.consult-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200%;
+    height: 60%;
+}
+
+.consult-input {
+    padding: 0.75em 1em;
+    border-radius: 0.5em;
+    margin-left: 3em;
+    font-size: 1em;
+    border: 0.5px solid gray;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    width: 200%;
+    flex: 1;
+    margin-bottom: 2em;
+    font-family: 'SVN-Gilroy', sans-serif;
+}
+
+.form-btn {
+    margin-left: 2em;
+    background-color: #8FE3CF;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer;
+}

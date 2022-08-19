@@ -6,7 +6,7 @@ body {
 
 .main-wrapper {
     height: 100vh;
-    background: url("./static/line.png");
+    background: url("./static/lineBig.png");
     background-repeat: no-repeat;
     width: 100vw;
     margin: -1em -1em -1em -1em;
@@ -82,4 +82,18 @@ body {
     border: none;
     font-weight: bold;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1500px) {
+    .main-wrapper {
+        background: url("./static/lineSmol.svg");
+        background-repeat: no-repeat;
+    }
+    .login-info {
+        margin-left: 30em;
+    }
+    .login-form {
+        margin-top: 3em;
+        margin-left: 4em;
+    }
 }

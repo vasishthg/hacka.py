@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./account.css">
+    <link href='https://fonts.googleapis.com/css?family=Major Mono Display' rel='stylesheet'>
+    <link href="http://fonts.cdnfonts.com/css/svn-gilroy" rel="stylesheet">
+    <title>Account</title>
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <div>
+                <p class="header-title">Croaker</p>
+            </div>
+            <div class="header-right">
+                <a href="./index.html">Users</a>
+                <a href="./virtuoso.html">Manage Reports</a>
+                <a>Inbox</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <p class="section-title">Manage Your Account</p>
+            <form class="form-main">
+                <div class="form-top">
+                    <div class="top-left">
+                        <div class="form-section">
+                            <label class="section-name" for="email">Email</label>
+                            <input class="section-input" id="email" type="email" placeholder="abcd@xyz.com" />
+                        </div>
+                        <div class="form-section">
+                            <label class="section-name" for="name">Name</label>
+                            <input class="section-input" id="name" type="text" placeholder="Bingus Bongus" />
+                        </div>
+                        <div class="form-section">
+                            <label class="section-name" for="password">Password</label>
+                            <input class="section-input" id="password" type="password" placeholder="*********" />
+                        </div>
+                    </div>
+                    <div class="top-right">
+                        <img
+                            src="./static/user.png"
+                            class="form-image" />
+                    </div>
+                </div>
+                <div class="form-bottom">
+                    <p class="section-title">Consult</p>
+                    <div class="consult-section">
+                        <textarea class="consult-input" id="consult" type="text" placeholder="State remarks ..."></textarea>
+                        <button class="form-btn">Reply</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -134,7 +134,8 @@ body {
 
 .container-bottom-reasons {
     margin-top: 30px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
     align-items: center;
 }
@@ -171,4 +172,13 @@ body {
     font-size: 15px;
     line-height: 22px;
     color: rgb(57, 57, 57);
+}
+
+@media screen and (max-width: 1500px) {
+    .container-bottom-reasons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container-bottom-card {
+        margin-bottom: 3em;
+    }
 }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Med.io - Admin</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body style="background: url('/static/dash-bg.svg')">
+    <div class="sidenav">
+        <h1 class="dash-logo">Name</h1>
+        <a href="/logout" style="float: right; margin-top: -2.3em; font-size: 1.3em; margin-right: 2.5em;">Logout</a>
+        <div class="dash-links">
+            <a class="hvr-underline-from-left2" href="#info">Users</a><br><br>
+            <a class="hvr-underline-from-left2" href="#manage">Manage Reports</a><br><br>
+            <a class="hvr-underline-from-left2" href="#inbox">Inbox</a>
+        </div>
+    </div>
+    <div class="dash-main">
+        <div class="uinfo" id="info">
+            <h3 class="dash-title">Users</h3>
+            <table>
+                <tr>
+                    <th class="manage-head">Name</th>
+                    <th class="manage-head">Age</th>
+                    <th class="manage-head">Email</th>
+                    <th class="manage-head">Weight</th>
+                    <th class="manage-head">Height</th>
+                    <th class="manage-head">Condition</th>
+                </tr>
+                <tr>
+                    <td class="manage-head">Name</td>
+                    <td class="manage-head">Age</td>
+                    <td class="manage-head">Email</td>
+                    <td class="manage-head">Weight</td>
+                    <td class="manage-head">Height</td>
+                    <td class="manage-head">Condition</td>
+                </tr>
+            </table>
+        </div>
+        <br><br><hr style="margin-left: 4em; margin-right: 4em;">
+        <div class="dash-reports">
+            <h3 class="dash-title">Reports</h3>
+            <h2 class="dash-statshead">Edit stats</h2>
+            <br><br>
+            <div class="dash-manage" id="manage">
+                <form action="" method="post" class="dash-manageform" style="margin-left: 1em;">
+                    <div class="dl"><label for="usr-email" class="dash-label">Email: </label></div>
+                    <input type="text" class="dash-input" style="width: 30em;" placeholder="Enter user's email.." name="usr-email" id=""><br><br>
+                    <div class="dl"><label for="usr-name" class="dash-label">Stat: </label></div>
+                    <input type="text" class="dash-input" style="width: 30em;" placeholder="Stat name.." name="usr-name" id=""><br><br>
+                    <div class="dl"><label for="usr-password" class="dash-label">Edit: </label></div>
+                    <input type="text" class="dash-input" style="width: 65em;" placeholder="State edits.." name="usr-password" id="">
+                    <input type="submit" value="Update" style="background: none; outline: none; border: none; font-family: 'gilroy-bold'; font-size: 1.1em; cursor: pointer;">
+                    <textarea type="text" class="dash-input3" style="width: 30em;" value="{{ udata['email'] }}" placeholder="State remarks.." name="usr-email" id=""></textarea><br><br>
+                </form>
+            </div>
+        </div>
+        <br><br>
+        <div class="dash-inbox" id="inbox">
+            <h3 class="dash-title">Inbox</h3>
+            <div class="dash-content">
+                <form action="" class="inbox-form" method="post">
+                    <input type="text" class="dash-input" style="width: 37em;" placeholder="Reply to thread.." name="" id="">
+                    <input type="submit" value="reply" class="main-btn" style="margin-left: 1.5em;">
+                </form>
+            </div>
+            <div class='dash-names'>
+                <img src="{{url_for('static', filename='u-img.svg')}}" class="dash-img" alt="">
+                <p class="dash-name">Vasishth Gupta</p>
+            </div><br>
+            <div class='dash-names'>
+                <img src="{{url_for('static', filename='u-img.svg')}}" class="dash-img" alt="">
+                <p class="dash-name">Vasishth Gupta</p>
+            </div><br>
+            <div class='dash-names'>
+                <img src="{{url_for('static', filename='u-img.svg')}}" class="dash-img" alt="">
+                <p class="dash-name">Vasishth Gupta</p>
+            </div><br>
+            <div class='dash-names'>
+                <img src="{{url_for('static', filename='u-img.svg')}}" class="dash-img" alt="">
+                <p class="dash-name">Vasishth Gupta</p>
+            </div><br>
+            <div class='dash-names'>
+                <img src="{{url_for('static', filename='u-img.svg')}}" class="dash-img" alt="">
+                <p class="dash-name">Vasishth Gupta</p>
+            </div><br>
+            <div class='dash-names'>
+                <img src="{{url_for('static', filename='u-img.svg')}}" class="dash-img" alt="">
+                <p class="dash-name">Vasishth Gupta</p>
+            </div><br>
+        </div>
+    </div>  
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="/static/main.js"></script>

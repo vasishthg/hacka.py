@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body style="background: url('/static/dash-bg.svg')">
+    <div class="sidenav">
+        <h1 class="dash-logo">Med.io - Dashboard</h1>
+        <a href="/logout" style="float: right; margin-top: -2.3em; font-size: 1.3em; margin-right: 2.5em;">Logout</a>
+        <div class="dash-links">
+            <a class="hvr-underline-from-left2" href="#stats">Stats</a><br><br>
+            <a class="hvr-underline-from-left2" href="#manage">Manage Account</a><br><br>
+            <a class="hvr-underline-from-left2" href="#consult">Consult</a>
+        </div>
+    </div>
+
+    <div class="dash-main">
+        <div class="dash-stats" id="stats">
+            <h3 class="dash-title">Stats</h3>
+            <div class="dash-stat">
+                <p class="dash-statname">Body Weight</p>
+                <div class="dash-statstat">
+                    <p class="dash-statval">3</p>
+                </div>
+                <p class="dash-addsub">+5</p>
+            </div>
+            <div class="dash-stat">
+                <p class="dash-statname">BMI</p>
+                <div class="dash-statstat">
+                    <p class="dash-statval">3</p>
+                </div>
+                <p class="dash-addsub">+5</p>
+            </div>
+            <div class="dash-stat">
+                <p class="dash-statname">Body Weight</p>
+                <div class="dash-statstat">
+                    <p class="dash-statval">3</p>
+                </div>
+                <p class="dash-addsub">+5</p>
+            </div>
+            <div class="dash-stat">
+                <p class="dash-statname">Body Weight</p>
+                <div class="dash-statstat">
+                    <p class="dash-statval">3</p>
+                </div>
+                <p class="dash-addsub">+5</p>
+            </div>
+            <div class="dash-stat">
+                <p class="dash-statname">Body Weight</p>
+                <div class="dash-statstat">
+                    <p class="dash-statval">3</p>
+                </div>
+                <p class="dash-addsub">+5</p>
+            </div>
+            <div class="dash-stat">
+                <p class="dash-statname">Body Weight</p>
+                <div class="dash-statstat">
+                    <p class="dash-statval">3</p>
+                </div>
+                <p class="dash-addsub">+5</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="dash-manage" id="manage">
+            <h3 class="dash-title">Manage Your Account</h3>
+            <form action="" method="post" class="dash-manageform">
+                <div class="dl"><label for="usr-email" class="dash-label">Email: </label></div>
+                <input type="text" class="dash-input" value="{{ udata['email'] }}" name="usr-email" id=""><br><br>
+                <div class="dl"><label for="usr-name" class="dash-label">Name: </label></div>
+                <input type="text" class="dash-input" value="{{ udata['name'] }}" name="usr-name" id=""><br><br>
+                <div class="dl"><label for="usr-password" class="dash-label">Pass: </label></div>
+                <input type="text" class="dash-input" value="{{ udata['password'] }}" name="usr-password" id="">
+                <input type="submit" value="Update" style="background: none; outline: none; border: none; font-family: 'gilroy-bold'; font-size: 1.1em; cursor: pointer;">
+            </form>
+            <img src="{{url_for('static', filename='usr.svg')}}" class="dash-usrimg" alt="">
+        </div>
+        <br><br><hr style="margin-left: 4em; margin-right: 4em;">
+        <div class="dash-consult" id="consult">
+            <h3 class="dash-title">Consult</h3>
+            <form action="" method="post">
+                <textarea type="text" name="consult" placeholder="State remarks.." class="dash-consultinput" id=""></textarea><br><br>
+                <input type="submit" value="Consult" class="main-btn" style="float: right; margin-right: 10em;">
+            </form>
+        </div>
+        <br><br><br>
+    </div>  
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="/static/main.js"></script>

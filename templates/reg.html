@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Med.io - Register</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <!-- Nav -->
+    <img src="{{url_for('static', filename='ni.svg')}}" class="logreg-img" alt="">
+    <div class="nav" style="color: black;">
+        <a href="" class="nav-logo">MED.IO</a>
+    </div>
+    <br>
+    <br>
+    <form action="" method="post" class="logreg-form">
+        <label for="name" class="logreg-label">Full Name</label><br><br>
+        <input type="text" name="name" class="logreg-input" id="">
+        <br><br><br>
+        <label for="email" class="logreg-label">Email</label><br><br>
+        <input type="text" name="email" class="logreg-input" id="">
+        <br><br><br>
+        <label for="password" class="logreg-label">Password</label><br><br>
+        <input type="password" name="password" class="logreg-input" id="">
+        <br><br>
+        <input type="submit" value="Register" style="background: none; outline: none; border: none; font-family: 'gilroy-bold'; font-size: 1.1em; float: right; cursor: pointer;">
+    </form>
+    <div class="logreg-rdiv">
+        <h1 class="logreg-rdiv-title">Register</h1>
+        <a href="/login">Go To Login</a>
+    </div>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="/static/main.js"></script>
